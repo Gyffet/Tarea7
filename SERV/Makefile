@@ -6,7 +6,7 @@ JVM= java
 .java.class:
 	$(JC) -cp ./lib/javax.ws.rs-api-2.0.1.jar:./lib/gson-2.3.1.jar:. -d ./WEB-INF/classes $*.java
 
-CLASSES = ./NEG/Servicio.java
+CLASSES = ./NEG/Service.java
 
 default: classes
 
