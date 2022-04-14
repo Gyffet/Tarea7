@@ -14,7 +14,7 @@ public class User
   String genero;
   byte[] foto;
 
-  public static Usuario valueOf(String s) throws Exception
+  public static User valueOf(String s) throws Exception
   {
     Gson j = new GsonBuilder().registerTypeAdapter(byte[].class,new AdapBase64()).create();
     return (User)j.fromJson(s,User.class);
