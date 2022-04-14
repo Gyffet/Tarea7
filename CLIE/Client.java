@@ -12,7 +12,7 @@ public class Client {
 
     public static void main(String[] args) throws Exception {
 
-	  public int ciclo = 0;
+	  int ciclo = 0;
 
 	  do {
             BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
