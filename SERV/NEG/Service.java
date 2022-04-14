@@ -29,7 +29,7 @@ public class Service {
     }
   }
 
-  static Gson j = new GsonBuilder().registerTypeAdapter(byte[].class, new AdaptBase64())
+  static Gson j = new GsonBuilder().registerTypeAdapter(byte[].class, new AdapBase64())
       .setDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS").create();
 
   @POST
