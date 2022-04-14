@@ -132,7 +132,7 @@ public class Client {
 
             Gson j = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
             while ((respuesta = br.readLine()) != null){
-                User user = (User) j.fromJson(respuesta, Usuario.class);
+                User user = (User) j.fromJson(respuesta, User.class);
                 System.out.println("ID: " + user.id_usuario);
                 System.out.println("Email: " + user.email);
                 System.out.println("Nombre: " + user.nombre);
