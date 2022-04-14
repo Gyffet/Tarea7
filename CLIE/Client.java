@@ -77,7 +77,7 @@ public class Client {
     }
 
     public static void alta_usuario(User usuario) throws IOException {
-        URL url = new URL("http://localhost:8080/Servicio/rest/ws/alta_usuario");
+        URL url = new URL("http://localhost:8080/Service/rest/ws/alta_usuario");
         HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
         conexion.setDoOutput(true);
         conexion.setRequestMethod("POST");
@@ -114,7 +114,7 @@ public class Client {
 
     public static void consultar_usuario(int id_usuario) throws IOException {
 
-        URL url = new URL("http://localhost:8080/Servicio/rest/ws/consulta_usuario");
+        URL url = new URL("http://localhost:8080/Service/rest/ws/consulta_usuario");
         HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
         conexion.setDoOutput(true);
         conexion.setRequestMethod("POST");
@@ -157,7 +157,7 @@ public class Client {
 
     public static void borrar_usuario(int id_usuario) throws IOException {
 
-        URL url = new URL("http://localhost:8080/Servicio/rest/ws/borra_usuario");
+        URL url = new URL("http://localhost:8080/Service/rest/ws/borra_usuario");
         HttpURLConnection conexion = (HttpURLConnection) url.openConnection();
         conexion.setDoOutput(true);
         conexion.setRequestMethod("POST");
