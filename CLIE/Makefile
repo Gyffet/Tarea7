@@ -6,9 +6,9 @@ JVM= java
 .java.class:
 	$(JC) -cp .:* $*.java
 
-CLASSES = Cliente.java
+CLASSES = Client.java
 
-MAIN = Cliente
+MAIN = Client
 
 default: classes
 
