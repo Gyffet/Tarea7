@@ -71,7 +71,7 @@ public class Client {
             }
 
 	  }
-        while (ciclo = 0);
+        while (ciclo == 0);
 	  System.exit(0);
 		
     }
@@ -132,9 +132,9 @@ public class Client {
 
             Gson j = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
             while ((respuesta = br.readLine()) != null){
-                Usuario user = (Usuario) j.fromJson(respuesta, Usuario.class);
-                //System.out.println("ID: " + user.id_usuario);
-                //System.out.println("Email: " + user.email);
+                User user = (User) j.fromJson(respuesta, Usuario.class);
+                System.out.println("ID: " + user.id_usuario);
+                System.out.println("Email: " + user.email);
                 System.out.println("Nombre: " + user.nombre);
                 System.out.println("Apellido Paterno: " + user.apellido_paterno);
                 System.out.println("Apellido Materno: " + user.apellido_materno);
